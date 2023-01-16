@@ -18,14 +18,14 @@ body:
     attributes:
       label: Description
       description: Please give a description of the requested feature or change
-    validation:
+    validations:
       required: true
   - type: textarea
     id: justification
     attributes:
       label: Who would benefit?
       description: Please justify the request by describing who would benefit from this feature or change
-    validation:
+    validations:
       required: true
   - type: textarea
     id: attachments

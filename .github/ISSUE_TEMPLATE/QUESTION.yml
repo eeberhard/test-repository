@@ -22,14 +22,14 @@ body:
         - New user
         - Intermediate user
         - Expert user
-    validation:
+    validations:
       required: true
   - type: textarea
     id: question
     attributes:
       label: Question
       description: What is your question?
-    validation:
+    validations:
       required: true
   - type: textarea
     id: attachments

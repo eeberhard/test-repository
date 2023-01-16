@@ -19,21 +19,21 @@ body:
       label: Code version
       description: Specify the release version of the code that this bug appears in
       placeholder: v1.2.3
-    validation:
+    validations:
       required: true
   - type: textarea
     id: brief-description
     attributes:
       label: Brief description
       description: Give a brief description of the bug
-    validation:
+    validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: Steps to reproduce
       description: Describe the steps to reproduce the bug
-    validation:
+    validations:
       required: true
   - type: textarea
     id: log-output
