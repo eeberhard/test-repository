@@ -1,7 +1,8 @@
 name: Bug Report
 description: Submit a bug report
 title: "[Bug]: "
-labels: ["bug"]
+labels: [ "bug" ]
+projects: "eeberhard/2"
 assignees:
   - eeberhard
 body:
@@ -13,12 +14,16 @@ body:
         2. Update the issue title above with a description of the bug (e.g `[Bug]: Component XYZ crashes when...`)
         3. Fill out the form fields below
         4. Press Submit
-  - type: input
-    id: version
+  - type: textarea
+    id: manifest
     attributes:
-      label: Code version
-      description: Specify the release version of the code that this bug appears in
-      placeholder: v1.2.3
+      label: Image manifest
+      description: Copy the full manifest file with the base version and any extras used to package your AICA runtime image
+      placeholder: |
+        #syntax=ghcr.io/aica-technology/app-builder:v1
+
+        [packages]
+        "@aica/base" = "v1.2.3"
     validations:
       required: true
   - type: textarea
@@ -40,7 +45,7 @@ body:
     attributes:
       label: Relevant log output
       description: Copy and paste any relevant log output resulting from the bug
-      render: shell
+      render: Shell
   - type: textarea
     id: attachments
     attributes:
