@@ -19,6 +19,7 @@ body:
     attributes:
       label: Image manifest
       description: Copy the full manifest file with the base version and any extras used to package your AICA runtime image
+      render: Shell
       placeholder: |
         #syntax=ghcr.io/aica-technology/app-builder:v1
 
